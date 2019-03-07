@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сервис круглосуточной телефонной поддержки Личный помощник</title>
+  <meta name="description" content="Забронировать ресторан, купить билеты, вызвать такси и прочие услуги доступные по одному звонку вашему Личному помощнику.">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(52411516, "init", {
+      id: 52411516,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+
+  <script>
+    (function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '0ecca60ac0912a8159d5a3b72e512686');
+</script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/52411516" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- START: header -->
+
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header">
+    <div class="container">
+      <a href="#" class="probootstrap-logo">Личный<br>
+        помощник<span>.</span></a>
+
+      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Меню</i></a>
+      <div class="mobile-menu-overlay"></div>
+
+      <nav role="navigation" class="probootstrap-nav hidden-xs">
+        <ul class="probootstrap-main-nav">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <ul class="probootstrap-right-nav hidden-xs">
+          <li><a href="https://vk.com"><i class="icon-vk"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="icon-facebook2"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="icon-instagram2"></i></a></li>
+        </ul>
+        <div class="extra-text visible-xs">
+          <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
+          <h5>Социальные сети.</h5>
+          <ul class="social-buttons">
+            <li><a href="https://vk.com"><i class="icon-vk"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="icon-instagram2"></i></a></li>
+          </ul>
+          <h5>Телефон</h5>
+          <a href="tel:+74993910913">8 (499) 391-09-13</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+  <section class="probootstrap-slider flexslider" id="main">
+    <ul class="slides">
+      <li style="background-image: url(img/bg_1.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2>Ваш Личный помощник.</h2>
+                <p><a href="#contacts" class="btn btn-primary btn-form">Заказать услуги</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li style="background-image: url(img/bg_3.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2>Круглосуточная поддержка по любым вашим вопросам.</h2>
+                <p><a href="#contacts" class="btn btn-primary btn-form">Заказать услуги</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- END: slider  -->
+
+  <section class="probootstrap-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h1>Множество услуг в вашем распоряжении по единому номеру телефона.</h1>
+        </div>
+      </div>
+      <div class="row mb20">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <div>Теперь нет необходимости дозваниваться в кафе или ресторан что-бы забронировать столик. <br>
+            Закажем для вас билеты в театр или на концерт любимого исполнителя.
+            Поможем организовать путешествие. </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-truck"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Транспортные услуги</h3>
+              <p>
+
+
+
+                Ваш личный помощник решит вопрос с транспортом в самый короткий срок. Сможет вызвать такси, уточнить
+                время подачи автомобиля, или предоставить информацию о прокате автомобилей.
+                Ассистент не только вызовет Вам такси, но и предоставит информацию о прокате автомобилей и других
+                передвижных средств. Ваш ассистент в Грейс24 предоставит информацию о классе машин и их наличии в
+                прокате в различных компаниях, специализирующихся на прокате автомобилей.
+
+
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-user-tie"></i>
+
+            </div>
+            <div class="text">
+              <h3 class="heading">Подбор персонала.</h3>
+              <p>
+                Необходимо помощь персонала? Сможем подобрать для вас клиринговую компанию, курьерскую службу или любую
+                другую компанию. Поможем организовать вызов мастера или предоставит всю необходимую информацию для
+                самостоятельного выбора. Подберём и вызовем квалифицированный рабочий персонал, который качественно и
+                быстро произведёт уборку любого помещения как разово, так и регулярно.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-airplane"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Поддержка в путешествиях.</h3>
+              <p>
+
+                Поможем спланировать ваш отдых от и до. Планирование и сопровождение поездок любой сложности.
+                Подберём и предоставим информацию о транспорте и ценам по нужному Вам направлению, организует услуги
+                fast track, найдём гостиницу и запланируем досуг в поездке. Найдём информацию о VIP-залах в аэропортах,
+                вокзалах и отелях. Информация о погоде в регионе, волнах, ветре на время отдыха и другое
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-cart"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Доставка и поиск товаров.</h3>
+              <p>
+                Ищите определенный товар? Найдем и сообщим где его можно приобрести! Поможем Вам с выбором подарков или
+                поможем найти товары, которые требуются вам лично. Найдем интернет-магазин, подберем необходимый товар,
+                произведем бронирование позиции и договоримся о доставке.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-archive"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Справочная информация.</h3>
+              <p>
+
+                Предоставим любую справочную информацию. Где находится необходимая вам организация, узнаем номер
+                телефона компании, дозвонимся и уточним другую информацию, которая вам необходима прямо сейчас.
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+
+            <div class="icon">
+              <i class="icon-spoon-knife"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Рестораны и отдых.</h3>
+              <p>
+                Сможем подобрать идеальный ресторан по вашему вкусу. Готовы взять на себя задачу по бронированию мест и
+                резервированию. Готовы удовлетворить самые требовательные вкусы и пожелания и организовать ваш отдых в
+                любой день недели.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-suitcase"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Бизнес услуги.</h3>
+              <p>
+
+
+                Подскажем, когда и как оплатить налоги. Помощь при утере документов (паспорта, кредитных карт и т. д.),
+                рекомендации по их восстановлению или замене.
+
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-aid-kit"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading"> Медицинская помощь.</h3>
+              <p>
+
+
+                Доставка лекарственных препаратов препаратов и товаров.
+                В случае необходимости ассистент организует приезд врача или медицинское сопровождение.
+
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-star"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Эксклюзивные услуги.</h3>
+              <p>
+
+                Поможем в любых приватных вопросах. Просто сообщите нам, какая информация вас интересует и мы
+                обязательно вам поможем.
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <div class="container">
+    <hr style="height: 2px;
+    opacity: 0.15;">
+  </div>
+
+  <section class="probootstrap-section" id="prices">
+    <div class="container" ">
+      <div class=" probootstrap-animate" style="border-top: none;
+        border-bottom: none;">
+      <div class="row mb20">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h2>Стоимость подключения.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-lg-6 col-xs-12 col-md-push-5 col-lg-push-6 probootstrap-animate mb20" class="prices-text"
+          style="display: inline-block;  vertical-align: middle;  float: none;">
+          <p class="prices-text">Неограниченное количество запросов 24 часа в сутки. Предложения от партнеров,
+            авиакомпаний и отелей, бронирование ресторанов и клубов, доставка цветов, подбор подарков и многое другое.</p>
+          <div class="probootstrap-card-media mobile-hidden">
+            <img src="img/concierge-hero.jpg" class="img-responsive img-border prices-text" alt="">
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6 col-xs-12 col-md-pull-7 col-lg-pull-6  probootstrap-animate" style="display: inline-block;  vertical-align: middle;  float: none;">
+          <div class="row align-items-center " style="text-align: center;">
+            <div class="col-xs-6 col-lg-3">
+              <div class="probootstrap-card-text mb20">
+                <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">Год.</div>
+                <div class="probootstrap-card-price popup-with-form">80 000 руб.</div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+              <div class="probootstrap-card-text mb20">
+                <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">Полгода.</div>
+                <div class="probootstrap-card-price">48 000 руб.</div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+              <div class="probootstrap-card-text mb20">
+                <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">3 месяца.</div>
+                <div class="probootstrap-card-price">30 000 руб.</div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+              <div class="probootstrap-card-text mb20">
+                <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">1 месяц.</div>
+                <div class="probootstrap-card-price">12 000 руб.</div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="probootstrap-card-text mb20">
+                <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">14 дней (пробный).</div>
+                <span class="probootstrap-card-price">6 000 руб.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+  <div class="container">
+    <div class="probootstrap-cta probootstrap-animate">
+      <div class="test_wrapper">
+        <div class="test_text">
+            <h2 class="mb20">Заказать пробный период.</h2>
+          <p>Для заказа тестового периода заполните поля и наш сотрудник свяжется с вами в ближайшее время</p>
+          <p><a href="#test-form" role="button" class="popup-with-form btn btn-primary">Заказать тест</a></p>
+        </div>
+        <div class="test_pay">
+          <img src="img/pay.png" alt="Способы оплаты" class="test_pay_desk">
+          <img src="img/pay_mobile.png" alt="Способы оплаты" class="test_pay_mob">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="test-form" class="mfp-hide test-form">
+    <div class="container">
+      <form action="mail-test.php" method="POST" class="probootstrap-form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="fname">Имя</label>
+              <input required type="text" class="form-control" id="name" name="name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="lname">Телефон</label>
+              <input required type="tel" class="form-control" id="phone" name="phone">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input required type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Отправить" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="probootstrap-animate" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading ">
+          <h2>заказать услугу</h2>
+          <a href="tel:+74993910913">8 (499) 391-09-13</a>
+        </div>
+      </div>
+      <p>Для заказа услуги заполните поля и наш сотрудник свяжется с вами в ближайшее время</p>
+      <p><button role="button" class="btn btn-primary btn-form">Заказать услугу</button></p>
+      <div class="row" >
+        <div class="col-md-8 col-xs-12" style="float:none; display: inline-block; vertical-align: bottom;" >
+          <form action="mail.php" method="POST" class="probootstrap-form mb60" onsubmit="ym(52411516, 'reachGoal', 'submit'); roistat.event.send('submit'); return true;" style=" display: none;">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fname">Имя</label>
+                  <input required type="text" class="form-control" id="name" name="name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lname">Телефон</label>
+                  <input required type="tel" class="form-control" id="phone" name="phone">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input required type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Отправить" />
+            </div>
+          </form>
+          <p><a href="http://private-helper.ru/agreement.html">Соглашение на обработку персональных данных</a></p>
+        </div>
+        <div class="col-md-4 col-xs-12 contacts" style="float:none; display: inline-block; vertical-align: bottom;" id="contacts">
+          <div class="row">
+            <div class="col-md-12 col-xs-4">Наши контакты:</div>
+            <div class="col-md-12 col-xs-4"><a href="tel:+74993910913">8 (499) 391-09-13</a></div>
+            <div class="col-md-12">
+              <ul class="probootstrap-right-nav mb70" style="position: relative;">
+                <li><a href="https://vk.com"><i class="icon-vk"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="icon-facebook2"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="icon-instagram2"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $('footer form').submit(function (e) {
+      
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "./mail.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find("input").val("");
+			let message = document.createElement('div');
+			message.innerHTML = "Ваше сообщение отправлено";
+			message.style.color = "#22eaaa";
+			$("footer form").append(message);
+      $("footer form").trigger("reset");
+      setTimeout( ()=>{
+        $('footer form').find(message).remove();
+      }, 5000 )
+		});
+		return false;
+	});
+
+	$('#test-form form').submit(function (e) {
+    
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "./mail-test.php",
+			data: $(this).serialize()
+		}).done(function () {
+      
+			$(this).find("input").val("");
+			let message = document.createElement('div');
+			message.innerHTML = "Ваше сообщение отправлено";
+			message.style.color = "#22eaaa";
+			$("#test-form form").append(message);
+      $("#test-form form").trigger("reset");
+      setTimeout( ()=>{
+        $('#test-form form').find(message).remove();
+      }, 5000 )
+		});
+		return false;
+	});
+  </script>
+
+</body>
+
+</html>

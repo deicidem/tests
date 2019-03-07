@@ -1,0 +1,47 @@
+/* Your custom css code goes here */
+.test-form {
+  background-color: #000;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid #11eaaa;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.test-form .container{
+ width: 100%;
+}
+.test_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test_pay_mob {
+  display: none;
+}
+
+.test_wrapper .test_pay {
+  max-width: 300px;
+}
+.test_wrapper img{
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .test_wrapper {
+    align-items: flex-start;
+    flex-direction: column
+  }
+  .test_text {
+    margin-bottom: 20px;
+  }
+  .test_wrapper .test_pay {
+    max-width: 100%;
+  }
+  .test_pay_desk {
+    display: none;
+  }
+  .test_pay_mob {
+    display: block;
+  }
+}
