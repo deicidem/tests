@@ -20,10 +20,11 @@
   display: none;
 }
 
-.test_wrapper .test_pay {
-  max-width: 300px;
+.test_pay {
+  text-align: right;
 }
-.test_wrapper img{
+.test_pay img{
+  width: 150px;
   max-width: 100%;
 }
 
@@ -35,7 +36,8 @@
   .test_text {
     margin-bottom: 20px;
   }
-  .test_wrapper .test_pay {
+  .test_pay img {
+    width: 100%;
     max-width: 100%;
   }
   .test_pay_desk {
@@ -43,5 +45,22 @@
   }
   .test_pay_mob {
     display: block;
+  }
+  .footer-contacts {
+    font-size: 16px;
+  }
+  .footer-contacts a{
+    padding: 0 5px !important;
+  }
+  .footer-contacts .col-xs-4 {
+    padding: 0;
+  }
+  .footer-contacts .probootstrap-right-nav{
+    top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer-contacts {
+    font-size: 12px;
   }
 }

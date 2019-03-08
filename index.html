@@ -366,7 +366,8 @@
             <div class="col-xs-12">
               <div class="probootstrap-card-text mb20">
                 <div class="probootstrap-card-heading probootstrap-card-pricer-header mb0">14 дней (пробный).</div>
-                <span class="probootstrap-card-price">6 000 руб.</span>
+                <div class="probootstrap-card-price mb20">6 000 руб.</div>
+                <p><a href="#test-form" role="button" class="popup-with-form btn btn-primary">заказать пробный период</a></p>
               </div>
             </div>
           </div>
@@ -377,22 +378,10 @@
     </div>
   </section>
   <!-- END section -->
-
   <div class="container">
-    <div class="probootstrap-cta probootstrap-animate">
-      <div class="test_wrapper">
-        <div class="test_text">
-            <h2 class="mb20">Заказать пробный период.</h2>
-          <p>Для заказа тестового периода заполните поля и наш сотрудник свяжется с вами в ближайшее время</p>
-          <p><a href="#test-form" role="button" class="popup-with-form btn btn-primary">Заказать тест</a></p>
-        </div>
-        <div class="test_pay">
-          <img src="img/pay.png" alt="Способы оплаты" class="test_pay_desk">
-          <img src="img/pay_mobile.png" alt="Способы оплаты" class="test_pay_mob">
-        </div>
-      </div>
+      <hr style="height: 2px;
+      opacity: 0.15;">
     </div>
-  </div>
 
   <div id="test-form" class="mfp-hide test-form">
     <div class="container">
@@ -401,19 +390,19 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="fname">Имя</label>
-              <input required type="text" class="form-control" id="name" name="name">
+              <input required type="text" class="form-control" id="test-name" name="name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="lname">Телефон</label>
-              <input required type="tel" class="form-control" id="phone" name="phone">
+              <input required type="tel" class="form-control" id="test-phone" name="phone">
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input required type="email" class="form-control" id="email" name="email">
+          <input required type="email" class="form-control" id="test-email" name="email">
         </div>
         <div class="form-group">
           <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Отправить" />
@@ -422,7 +411,7 @@
     </div>
   </div>
 
-  <footer class="probootstrap-animate" >
+  <footer class="probootstrap-animate">
     <div class="container">
       <div class="row">
         <div class="col-md-12 section-heading ">
@@ -432,9 +421,10 @@
       </div>
       <p>Для заказа услуги заполните поля и наш сотрудник свяжется с вами в ближайшее время</p>
       <p><button role="button" class="btn btn-primary btn-form">Заказать услугу</button></p>
-      <div class="row" >
-        <div class="col-md-8 col-xs-12" style="float:none; display: inline-block; vertical-align: bottom;" >
-          <form action="mail.php" method="POST" class="probootstrap-form mb60" onsubmit="ym(52411516, 'reachGoal', 'submit'); roistat.event.send('submit'); return true;" style=" display: none;">
+      <div class="row">
+        <div class="col-md-8 col-xs-12" style="float:none; display: inline-block; vertical-align: bottom;">
+          <form action="mail.php" method="POST" class="probootstrap-form mb60" onsubmit="ym(52411516, 'reachGoal', 'submit'); roistat.event.send('submit'); return true;"
+            style=" display: none;">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -464,7 +454,11 @@
           <p><a href="http://private-helper.ru/agreement.html">Соглашение на обработку персональных данных</a></p>
         </div>
         <div class="col-md-4 col-xs-12 contacts" style="float:none; display: inline-block; vertical-align: bottom;" id="contacts">
-          <div class="row">
+          <div class="row footer-contacts">
+            <div class="col-xs-12 test_pay">
+              <img src="img/pay.png" alt="Способы оплаты" class="test_pay_desk">
+              <img src="img/pay_mobile.png" alt="Способы оплаты" class="test_pay_mob">
+            </div>
             <div class="col-md-12 col-xs-4">Наши контакты:</div>
             <div class="col-md-12 col-xs-4"><a href="tel:+74993910913">8 (499) 391-09-13</a></div>
             <div class="col-md-12">
@@ -486,50 +480,6 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
-  <script>
-    $('footer form').submit(function (e) {
-      
-		e.preventDefault();
-		$.ajax({
-			type: "POST",
-			url: "./mail.php",
-			data: $(this).serialize()
-		}).done(function () {
-			$(this).find("input").val("");
-			let message = document.createElement('div');
-			message.innerHTML = "Ваше сообщение отправлено";
-			message.style.color = "#22eaaa";
-			$("footer form").append(message);
-      $("footer form").trigger("reset");
-      setTimeout( ()=>{
-        $('footer form').find(message).remove();
-      }, 5000 )
-		});
-		return false;
-	});
-
-	$('#test-form form').submit(function (e) {
-    
-		e.preventDefault();
-		$.ajax({
-			type: "POST",
-			url: "./mail-test.php",
-			data: $(this).serialize()
-		}).done(function () {
-      
-			$(this).find("input").val("");
-			let message = document.createElement('div');
-			message.innerHTML = "Ваше сообщение отправлено";
-			message.style.color = "#22eaaa";
-			$("#test-form form").append(message);
-      $("#test-form form").trigger("reset");
-      setTimeout( ()=>{
-        $('#test-form form').find(message).remove();
-      }, 5000 )
-		});
-		return false;
-	});
-  </script>
 
 </body>
 
